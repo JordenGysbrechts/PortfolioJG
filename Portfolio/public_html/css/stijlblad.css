@@ -2153,16 +2153,14 @@ div.items p:target {display: block;
 		margin: 0 -29px;
 	}
 }
+
 .portfolio-item {
 	width: 182px; padding: 4px; background: #eee; text-align: center;
-	float: left; margin: 0 7px 14px 7px;
-        margin-left: auto;
-        margin-right: auto;
+	float: left; 
+        margin: 22px 7px 14px 7px;
+        padding: 57px 69px 50px 69px; overflow: hidden;
+        
        
-}
-.tussen{
-    
-     padding: 20px 50px 20px 50px;
 }
 	.portfolio-item p.btn {
 		margin: 0;
@@ -2174,3 +2172,7 @@ div.items p:target {display: block;
 		 text-decoration: none;
 	}
 		
+        .centerPortfolio {
+
+            
+}
