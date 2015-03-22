@@ -8,10 +8,6 @@ and open the template in the editor.
     Author     : Jorden_2
 */
 
-/*-----------------------------------------------------------------------------------*/
-/*	RESET
-/*-----------------------------------------------------------------------------------*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -2157,6 +2153,24 @@ div.items p:target {display: block;
 		margin: 0 -29px;
 	}
 }
-
-
-
+.portfolio-item {
+	width: 182px; padding: 4px; background: #eee; text-align: center;
+	float: left; margin: 0 7px 14px 7px;
+        margin-left: auto;
+        margin-right: auto;
+       
+}
+.tussen{
+    
+     padding: 20px 50px 20px 50px;
+}
+	.portfolio-item p.btn {
+		margin: 0;
+	}
+	.portfolio-item p.btn a {
+		display: block; width: 183px; height: 29px; padding: 7px 0 0 0;
+		background: url(images/see-more-bg.png);
+		font-weight: bold; text-align: center; text-transform: uppercase;
+		 text-decoration: none;
+	}
+		
