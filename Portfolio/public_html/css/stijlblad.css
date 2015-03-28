@@ -2176,3 +2176,291 @@ div.items p:target {display: block;
 
             
 }
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+@font-face {
+	font-family: gotham;
+	src: url(Gotham-Light.otf);
+}
+
+* {
+	font-family: 'gotham', sans-serif;
+	box-sizing: border-box;
+}
+
+
+
+div#wrapper {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+div#wrapper .nav {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	background: #ffffff;
+	text-align: center;
+	padding: 10px;
+}
+
+div#wrapper .nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+div#wrapper .nav ul li {
+	display: inline;
+}
+
+div#wrapper .nav ul li a {
+	text-decoration: none;
+	padding: 4px 8px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	color: #222222;
+	border-radius: .15em;
+	transition: all .1s ease;
+	box-sizing: border-box;
+	display: inline-block;
+	-webkit-border-radius: .2em;
+	        border-radius: .2em;
+}
+
+div#wrapper .nav ul li a:hover {
+	background-color: #222222;
+	color: #fff;
+}
+
+div#wrapper .nav ul li .login {
+	color: #81a90b;
+	transition: all .1s ease;
+}
+
+div#wrapper .nav ul li .login:hover {
+	background-color: #81a90b;
+	color: #ffffff;
+}
+
+div#wrapper .content {
+	width: 80%;
+	height: auto;
+	line-height: 1.6em;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	text-align: center;
+	padding: 0 0 20px 0;
+}
+
+div#wrapper .content .column {
+	width: 31%;
+	height: auto;
+	display: inline-block;
+	padding: 0px;
+	box-sizing: border-box;
+	background-color: #fff;
+	border: thin solid #ededed;
+	margin: 0 auto;
+	margin: 2% 0 0 0;
+}
+
+div#wrapper .content .column p {
+	margin: 0;
+	padding: 0 25px;
+	font-size: 1em;
+	text-align: center;
+}
+
+div#wrapper .content .column a {
+	text-decoration: none;
+	padding: 2px 10px;
+	font-size: .8em;
+	color: #383838;
+	display: inline-block;
+	margin: 10px 0 15px 0;
+	border-radius: .2em;
+	box-sizing: border-box;
+	text-align: center;
+ 	font-family: 'Open Sans', sans-serif;
+ 	transition: all .1s ease;
+}
+
+div#wrapper .content .column a:hover {
+	background-color: #383838;
+	color: #fff;
+}
+
+div#wrapper .content .column img {
+	width: 100%;
+	height: 150px;
+	padding: 0 0 15px 0;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+div#wrapper .content .second-column {
+	margin: 0 1.5%;
+}
+
+div.header {
+	width: 100%;
+	height: 200px;
+	background: url(http://www.directupload.net/file/d/3619/xquvo72a_jpg.htm);
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+div.header h3 {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	line-height: 200px;
+	text-align: center;
+	color: #f7f7f7;
+	font-size: 1.2em;
+}
+
+/* 
+	Media for screen size = 1060px
+*/
+
+@media only screen and (max-width:1060px) {
+
+	div#wrapper .nav ul li a {
+		margin: 0 5px;
+	}
+
+	div#wrapper .content {
+		width: auto;
+		margin: 0 auto;
+		height: auto;
+		display: block;
+		float: left;
+		padding: 20px 20px;
+	}
+
+	div#wrapper .content .column {
+		width: 48.5%;
+		box-sizing: border-box;
+		height: auto;
+		display: block;
+		float: left;
+		margin: 1% .7% 0 .8%;
+		text-align: center;
+	}
+
+	div#wrapper .content .column a {
+		padding: 2px 12px;
+		color: #222222;
+	}
+
+	div#wrapper .content .column a:hover {
+		background-color: #222222;
+	}
+
+	div#wrapper .content .column p {
+		margin: 0;
+		padding: 0 25px;
+	}
+
+	div#wrapper .content .last-column img {
+		width: 100%;
+		border-radius: .2em;
+	}
+
+	div.header {
+		height: 150px;
+	}
+
+	div.header h3 {
+		line-height: 150px;
+	}
+}
+
+/* 
+	Media for screen size = 640px 
+*/
+
+@media only screen and (max-width:645px) {
+	
+	div#wrapper .nav {
+		padding: 8px 0;
+		border-bottom: thin solid #efefef;
+	}
+
+	div#wrapper .nav ul li a {
+		display: block;
+		padding: 8px 0;
+		border-radius: 0;
+		margin: 0 0;
+	}
+
+	div#wrapper .nav ul li .login {
+		border: 0;
+		padding-left: 0;
+		background: none;
+	}
+
+	div#wrapper .content {
+		width: auto;
+		height: auto;
+		display: block;
+		float: left;
+		margin: 0 auto;
+	}
+
+	div#wrapper .content .column {
+		width: 100%;
+		box-sizing: border-box;
+		height: auto;
+		display: block;
+		float: left;
+		padding: 0 0 8px 0;
+		margin-top: 1%;
+	}
+
+	div#wrapper .content .column p {
+		padding: 0 20px;
+	}
+
+	div#wrapper .content .first-column {
+		margin: 5% 0 0 0;
+	}
+
+	div#wrapper .content .second-column {
+		margin: 5% 0 0 0;
+	}
+
+	div#wrapper .content .last-column {
+		margin: 5% 0 0 0;
+	}
+
+	div#wrapper .content .column a {
+		width: 100%;
+		text-align: center;
+		text-decoration: none;
+		padding: 5px 0;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 11px;
+		color: #222222;
+		margin: 8px 0 0 0;
+		border-radius: 0;
+		transition: all .1s ease;
+	}
+
+	div#wrapper .content .column a:hover {
+		background-color: #222222;
+		color: #fff;
+	}
+
+	div.header {
+		display: none;
+	}
+
+}
