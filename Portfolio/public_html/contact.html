@@ -6,6 +6,7 @@
         <title>Jorden Gysbrechts</title>
         <link rel="shortcut icon" href="style/images/favicon.png"/>
         <link href="css/stijlblad.css" rel="stylesheet" type="text/css"/>
+        <link href="css/view.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body class="singular page">
@@ -49,58 +50,47 @@
                     <div id="primary">
                         <div id="content" role="main">
 
-                            <div id="crumbs">
-                                <a href="#">Home</a> <span class="delimiter">/</span> 
-                                <span class="current">Contact</span>
-                            </div>
-
 
                             <!-- begin article -->
                             <article class="page hentry">
-                                <header class="entry-header">
-                                    <h1 class="entry-title"><a href="#">Contact</a></h1>
-                                </header>
-                                <!-- .entry-header -->
-
-                                <div class="entry-content">
-                                    <!-- Begin Form -->
-                                    <div class="form-container">
-                                        <div class="response"></div>
-                                        <form class="forms" action="#" method="post">
-                                            <fieldset>
-                                                <ol>
-                                                    <li class="form-row text-input-row">
-
-                                                        <input type="text" name="name" class="text-input defaultText required" placeholder="Naam" title="* Naam"/>
-
-                                                    </li>
-                                                    <li class="form-row text-input-row">
-                                                        <input type="text" name="email" placeholder="email" class="text-input defaultText required email" title="Email (Required)"/>
-                                                    </li>
-                                                    <li class="form-row text-input-row">
-                                                        <input type="text" name="subject" class="text-input defaultText" placeholder="Onderwerp" title="Subject"/>
-                                                    </li>
-                                                    <li class="form-row text-area-row">
-                                                        <textarea name="message" class="text-area required" placeholder="Bericht"></textarea>
-                                                    </li>
-                                                    <li class="form-row hidden-row">
-                                                        <input type="hidden" name="hidden" value="" />
-                                                    </li>
-                                                    <li class="button-row">
-                                                        <input type="submit" value="Submit" name="submit" class="btn-submit" />
-                                                    </li>
-                                                </ol>
-                                                <input type="hidden" name="v_error" id="v-error" value="Required" />
-                                                <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" />
-                                            </fieldset>
-                                        </form>
-                                    </div>
-                                    <!-- End Form -->
+                                    <section id="container">
+		<h2>Contacteer mij</h2>
+                <form name="hongkiat" id="hongkiat-form" method="post" action="mailto:jordengysbrechts@outlook.com" enctype="text/plain">
+		<div id="wrapping" class="clearfix">
+			<section id="aligned">
+			<input type="text" name="name" id="name" placeholder="Naam" autocomplete="off" tabindex="1" class="txtinput">
+		
+			<input type="email" name="email" id="email" placeholder="E-mail" autocomplete="on" tabindex="2" class="txtinput">
+		
+			<input type="text" name="website" id="website" placeholder="Website URL" autocomplete="off" tabindex="3" class="txtinput">
+		
+			<input type="tel" name="telephone" id="telephone" placeholder="Telefoonnummer?(niet vereist)" tabindex="4" class="txtinput">
+		
+			<textarea name="message" id="message" placeholder="Schrijf hier uw bericht..." tabindex="5" class="txtblock"></textarea>
+			</section>
+			
+			<section id="aside" class="clearfix">
+				<section id="recipientcase">
+				<h3>Categorie:</h3>
+					<select id="recipient" name="recipient" tabindex="6" class="selmenu">
+  						<option value="vraag">Vraag</option>
+  						<option value="Fout">Foutopmerking</option>
+  						
+					</select>
+				</section>
+				
+				
+			</section>
+		</div>
 
 
-                                </div>
-                                <!-- .entry-content -->
-
+		<section id="buttons">
+			<input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset">
+			<input type="submit" name="verzenden" id="submitbtn" class="submitbtn" tabindex="7" value="Verzenden!">
+			<br style="clear:both;">
+		</section>
+		</form>
+	</section>
                             </article>
                             <!-- end article -->
 
