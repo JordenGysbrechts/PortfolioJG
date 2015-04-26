@@ -1,67 +1,69 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="css/css.css" />
-    <link href="merlin/src/clippy.css" rel="stylesheet" type="text/css"/>
-<title>Jorden Gysbrechts Portfolio | Language - Taal</title>
-</head>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/css.css" />
+        <title>Jorden Gysbrechts Portfolio | Language - Taal</title>
+        <META NAME="beschrijving" CONTENT="Welkom op het online portfolio van Jorden Gysbrechts.">
+            <META NAME="keyword" CONTENT="jorden, gysbrechts, Jorden, Gysbrechts, Dendermonde, Hogeschool Gent, jordengysbrechts@outlook.com">
+                </head>
 
-<body onload = "startTimer()">
-    <div id="page">
-		
-        <div id="titlebar">
+                <body onload = "startTimer()">
+                    <div id="page">
 
-        	<h1>Portfolio - Notepad</h1>
-      </div>
-        <div id="bar">
-            <ul>
-                <li><a>File</a></li>
-                <li><a>Edit</a></li>
-                <li><a>Format</a></li>
-                <li><a>View</a></li>
-                <li><a>Help</a></li>
-            </ul>
-      </div>
-        <div id="main">
-        <h1 id="langKiezen">Choose your preferred language</h1>
-        
-           <table align = center>
-    <tr>
-        <td>Klik op de Nederlandse vlag voor de Nederlandstalige versie van mijn portfolio</th>
-        <td><a href="NL/index.html"><img src="css/nl.png" alt="" ></img></a></td>
-    </tr>
 
-        <td>Click on the English flag for the English version of my Portfolio</th>
-        <td><a href="ENG/index.html" onClick="alert('Engels is momenteel nog niet ondersteund')"><img src="css/eng.png" /></a></td>
-    </tr>
-    
-</table>
-        
-        </div>
-        
-        <script type = "text/javascript">
-          function displayNextImage() {
-              x = (x === images.length - 1) ? 0 : x + 1;
-              document.getElementById("langKiezen").innerHTML = images[x];
-          }
+                        <div id="titlebar">
 
-          function displayPreviousImage() {
-              x = (x <= 0) ? images.length - 1 : x - 1;
-              document.getElementById("img").src = images[x];
-          }
+                            <h1>Portfolio - Notepad</h1>
+                        </div>
+                        <div id="bar">
+                            <ul>
+                                <li><a>File</a></li>
+                                <li><a>Edit</a></li>
+                                <li><a>Format</a></li>
+                                <li><a>View</a></li>
+                                <li><a>Help</a></li>
+                            </ul>
+                        </div>
+                        <div id="main">
+                            <h1 id="langKiezen">Choose your preferred language</h1>
 
-          function startTimer() {
-              setInterval(displayNextImage, 3000);
-          }
+                            <table align = center>
+                                <tr>
+                                    <td>Klik op de Nederlandse vlag voor de Nederlandstalige versie van mijn portfolio</th>
+                                        <td><a href="NL/index.html"><img src="css/nl.png" alt="" ></img></a></td>
+                                </tr>
+                                <br />
+                                <td>Click on the English flag for the English version of my Portfolio</th>
+                                    <td><a href="ENG/index.html" ><img src="css/eng.png" /></a></td>
+                                    </tr>
 
-          var images = [], x = -1;
-          images[0] = "Kies de gewenste taal";
-          images[1] = "Choose your preferred language";
-      </script>
-        
-        <div id="footer">
-        </div>
-</body>
-</html>
+                            </table>
+
+                        </div>
+
+                        <script type = "text/javascript">
+                            function displayNextImage() {
+                                x = (x === images.length - 1) ? 0 : x + 1;
+                                document.getElementById("langKiezen").innerHTML = images[x];
+                            }
+
+                            function displayPreviousImage() {
+                                x = (x <= 0) ? images.length - 1 : x - 1;
+                                document.getElementById("img").src = images[x];
+                            }
+
+                            function startTimer() {
+                                setInterval(displayNextImage, 3000);
+                            }
+
+                            var images = [], x = -1;
+                            images[0] = "Kies de gewenste taal";
+                            images[1] = "Choose your preferred language";
+                        </script>
+
+                        <div id="footer">
+                        </div>
+                </body>
+                </html>
