@@ -2169,10 +2169,10 @@ table.test {
 }
 #taalENG{
 position: fixed;
-top: 85%;
-left:90%;
-width: 9%;
-height: 13%;
+top: 88%;
+left:91%;
+width: 7%;
+height: 10%;
 
 content:url(../images/engelsevlag.png);
   
@@ -2180,10 +2180,10 @@ content:url(../images/engelsevlag.png);
 
 #taalNL{
 position: fixed;
-top: 85%;
-left:90%;
-width: 9%;
-height: 13%;
+top: 88%;
+left:91%;
+width: 7%;
+height: 10%;
 
 content:url(../images/nederlandsevlag.png);
   
