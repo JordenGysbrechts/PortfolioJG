@@ -27,6 +27,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 :focus {/* remember to define focus styles! */
+    color: #fff; 
+    background: #00F; 
+
 	outline: 0;
 }
 
@@ -2163,4 +2166,25 @@ table.test {
     border-collapse: separate;
     border-spacing: 10px;
     *border-collapse: expression('separate', cellSpacing = '10px');
+}
+#taalENG{
+position: fixed;
+top: 85%;
+left:90%;
+width: 9%;
+height: 13%;
+
+content:url(../images/engelsevlag.png);
+  
+}
+
+#taalNL{
+position: fixed;
+top: 85%;
+left:90%;
+width: 9%;
+height: 13%;
+
+content:url(../images/nederlandsevlag.png);
+  
 }
