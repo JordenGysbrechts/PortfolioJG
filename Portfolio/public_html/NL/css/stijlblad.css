@@ -1806,6 +1806,26 @@ div.header h3 {
 
 @media only screen and (max-width:645px) {
 	
+    #menu-icon {
+
+		display:inline-block;
+
+	}
+
+	nav ul, nav:active ul { 
+
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		border: 5px solid #444;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+
+	}
+        
 	div#wrapper .nav {
 		padding: 8px 0;
 		border-bottom: thin solid #efefef;
@@ -2187,4 +2207,13 @@ height: 10%;
 
 content:url(../images/nederlandsevlag.png);
   
+}
+
+#menu-icon {
+
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: #4C8FEC url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxu-YMxKZKhgJyzzUH7n1tmABNcoP0tB5FWtAhKjZf2uf5hkcL7Z_XHw) center;
+
 }
