@@ -1,0 +1,134 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1.2;
+}
+ol { 
+   padding-left: 1.4em;
+   list-style: decimal;
+}
+ul {
+   padding-left: 1.4em;
+   list-style: square;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+} 
+/* end reset browser styles */
+
+body {
+   font-size: 1.25em;
+   line-height: 1.6;
+   background: url('../images/website_background.png');
+}
+
+/* Dit zorgt ervoor dat de website horizontaal gecentreerd wordt.
+Dit komt verder nog aan bod. */
+.main {
+   width: 980px;
+   margin: 0 auto;
+   padding: 10px;
+}
+
+@font-face {
+   font-family: 'amatic';
+   src: url('../fonts/amatic_regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'amatic';
+   src: url('../fonts/amatic_bold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'pacific';
+   src: url('../fonts/pacificregular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'texgyrecursor';
+   src: url('../fonts/texgyrecursorregular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+
+header{
+   background: url('../images/logo.png') no-repeat top center,
+      url('../images/header_background.png') repeat-x top center;
+}
+
+nav{
+   margin-top: 90px;
+   margin-bottom: 20px;
+   font-family: amatic,Helvetica,Arial,sans-serif;
+   font-size: 1.75em;
+}
+
+/* Merk op dat de padding-left van een ul is ingesteld op 1.4em in de reset styles */
+ul{
+   padding-left: 1em;
+}
+
+
+nav ul li{
+   display: inline-block;
+   padding: 10px 20px;
+}
+
+nav ul li a{
+   color: #fc8c86;
+   text-decoration: none;
+}
+
+nav ul li a:hover{
+   color: #56b1c1;
+}
+
+aside ul li{
+   display: inline-block;
+   padding: 5px;
+   margin-top: 30px;
+}
+
+h1{
+   background: url('../images/flag.png') no-repeat;
+   padding-left: 20px;
+   font-family: 'amatic',Helvetica,Arial,sans-serif;
+   font-size: 36px;
+   color: #959595;
+}
+
+article{
+   padding-left: 1em;
+}
+
+h3{
+   font-family: 'pacific',Helvetica,Arial,sans-serif;
+   color: #898989;
+   line-height: 2em;
+   font-size: 1.5em;
+}
+
+p{
+   font-family: texgyrecursor,Helvetica,Arial,sans-serif;
+}

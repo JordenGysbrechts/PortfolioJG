@@ -1,0 +1,223 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1.2;
+}
+ol { 
+   padding-left: 1.4em;
+   list-style: decimal;
+}
+ul {
+   padding-left: 1.4em;
+   list-style: square;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+} 
+
+* {
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;	
+}
+
+/* font-face */
+/* Deel 1 */
+@font-face {
+   font-family: 'DupontSanitairFont';
+   src: url('../fonts/DupontSanitairStd.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'DupontSanitairFont';
+   src: url('../fonts/DupontSanitairBold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'DupontSanitairFont';
+   src: url('../fonts/DupontSanitairItalic.woff') format('woff');
+   font-weight: normal;
+   font-style: italic;
+}
+
+/* Deel 2 */
+::selection{
+   background-color: #008b9a;
+}
+
+/* Deel 3 */
+body{
+   font-family: DupontSanitairFont,Verdana,Arial,sans-serif;
+   font-size: 1em;
+   color: #333;
+}
+
+/* Deel 4 */
+#bg{
+   position: fixed;
+   z-index: -1;
+}
+
+/* Deel 5 */
+.main{
+   max-width: 850px;
+   min-width: 700px;
+   margin: 0 auto;
+   padding: 25px;
+   background-color: white;  
+   overflow: hidden;
+}
+
+/* Deel 6 */
+header{
+   margin-bottom: 1em;
+   border-width: 30px; 
+   border-image: url('../images/border.png') 70 repeat;
+}
+
+/* Deel 7 */
+nav{
+   float: right;
+   margin: 1em;
+}
+
+nav ul li{
+   float: left;
+   list-style-type: none;
+   padding: 0.25em;
+   margin: 0.25em;
+}
+
+a{
+   text-decoration: none;
+   color: #008b9a;
+}
+
+/* Deel 8 */
+#left{
+   width: 22.5%;
+   float: left;
+   padding: 1.875%;      
+}
+
+#left img{
+   display: block;
+   padding-bottom: 1.875%; 
+   width: 100%;
+}
+
+/* Deel 9 */
+#content{
+   float: left;
+   border-left: 1px solid grey;
+   border-right: 1px solid grey;
+   padding: 1.875% 1%;
+   width: 45%;
+}
+
+/* Deel 10 */
+#right{
+   padding: 1.875% 1%;
+   width: 31.25%;
+   float: right;
+}
+
+/* Deel 11 */
+h1{
+   font-size: 1.5em;
+   margin: 0.5em 0;
+   color: #008b9a;
+   text-shadow: -4px 4px 3px #999999;
+}
+
+h1:before{
+   content: url('../images/dolfijnen.png')
+}
+
+/* Deel 12 */
+p{
+   line-height: 1.5em;
+   margin: 0.25em 0.25em 1.5em 0.25em;
+}
+
+p:first-line{
+   font-weight: bold;
+}
+
+/* Deel 13 */
+footer{
+   margin-top: 0.5em;
+   text-align: center;
+   clear: both;
+}
+
+
+/* Deel 14 */
+a[href *='facebook'] { 
+   padding-left: 35px;      
+   background: url(../images/socialicons.jpg) no-repeat 0px -7px;
+}
+
+a[href ^='mailto'] { 
+   padding-left: 35px;      
+   background: url(../images/socialicons.jpg) no-repeat 0px -40px;
+}
+
+/* Opmaak tabel */
+/* Deel 16 */
+td, th{
+   border: 1px solid black;
+   padding: 0.5em;
+   font-size: 0.8em;
+}
+
+th{
+   text-align: left;
+   font-weight: 900;
+   vertical-align: middle;    
+}
+
+tr:nth-of-type(1) th{
+   text-align: center;
+   color: #008b9a;
+}
+
+tr:nth-of-type(1) th:nth-of-type(1){
+   border: none;
+}
+
+
+/* Opmaak formulier */
+/* Deel 18 */
+form p{
+   margin: 1em;
+}
+
+label[for="naam"],label[for="telefoonnummer"]{
+   display: inline-block;
+   width: 8em;
+   text-align: left;
+   margin-right: 0.25em;
+}
+
+input[type="submit"]{
+     border-radius: 10px;
+     box-shadow: rgb(0,0,0) 4px 4px 5px;
+
+}
